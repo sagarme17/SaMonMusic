@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelistas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListasFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@color/colorSecondary"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/crear"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/no_cover" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="12dp"
+                android:text="Crear lista"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerlistas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+</FrameLayout>

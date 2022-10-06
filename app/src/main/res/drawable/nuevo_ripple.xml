@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#82878B">
+    <item android:width="250dp"
+        android:height="55dp"
+        android:drawable="@drawable/nueva_sin_presionar"/>
+</ripple>

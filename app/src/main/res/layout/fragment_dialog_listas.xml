@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mostrarListas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/layout_top_btn"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/regresar"
+            android:src="@drawable/arrow_left"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF"
+            android:text="Agegar a lista de reproducción"
+            android:layout_toEndOf="@id/regresar"
+            android:gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_top_btn">>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/nueva_lista_app"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/nuevo_ripple"
+                android:text="Nueva lista"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclernew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/menulistas"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="308dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/list_img_uno"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/no_cover"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/list_img2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/no_cover"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/list_img3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/list_img2"
+            android:background="@drawable/no_cover"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/list_img4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/list_img2"
+            android:background="@drawable/no_cover"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/list_img5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/list_img3"
+            android:layout_toRightOf="@id/list_img4"
+            android:background="@drawable/no_cover"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/list_img_uno"
+            android:maxLines="1"
+            android:paddingTop="8dp"
+            android:text="Nombre Lista"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@+id/list_img_uno"
+            android:paddingTop="15dp"
+            android:text="Numero canciones"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="-1dp"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/Layout_edit"
+            android:layout_width="258dp"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit_list"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/edit" />
+
+            <TextView
+                android:id="@+id/edit_list_txt"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:text="Editar lista de reproducción"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout_quit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/quitar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/quit" />
+
+            <TextView
+                android:id="@+id/quitar_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:text="Eliminar lista de reproducción"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

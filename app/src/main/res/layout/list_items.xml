@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/menu_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/menu" />
+
+    <ImageView
+        android:id="@+id/list_img_uno"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/no_cover"
+        android:padding="5dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/img_pt1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/no_cover"
+        android:padding="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/img_pt4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/img_pt2"
+        android:layout_toRightOf="@id/img_pt3"
+        android:background="@drawable/no_cover"
+        android:padding="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/img_pt3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/img_pt1"
+        android:background="@drawable/no_cover"
+        android:padding="5dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/img_pt2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/img_pt1"
+        android:background="@drawable/no_cover"
+        android:padding="5dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/list_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/list_img_uno"
+        android:maxLines="1"
+        android:paddingTop="8dp"
+        android:text="Nombre Lista"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/num_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/list_img_uno"
+        android:paddingTop="15dp"
+        android:text="Número de canciones"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/idItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+//EN LA CARPETA ELIMINA TODA CONFIGURACION CREADA PREVIAMENTE
+rm -rf .git
+
+//REVISA LA CONFIGURACION DEL NOMBRE DE USUARIO
+git config user.name
+
+//REVISA LA CONFIGURACION DEL CORREO
+git config user.email
+
+//CREA UN NUEVO REPOSITORIO EN LA CARPETA (INICIALIZA)
+git init
+
+//CONECTA REPOSITORIO DE LA RED CON EL DE LA CARPETA, SOLO SE USA UNA VEZ
+git remote add origin https://github.com/Alucard1453/ApoloMusicPlayer.git
+
+//REGRESA NOMBRE O DIRECCION DEL REPOSITORIO
+git remote -v
+
+//JALA TODO LO DEL REPOSITORIO A LA  CARPETA
+git pull origin master
+
+//INICIAR CON ESTE PARA VER CAMBIOS QUE SE HAN HECHO EN EL REPOSITORIO
+git pull
+
+//VER CARPETAS
+ls
+
+//REGRESA ESTADO ACTUAL DEL REPOSITORIO, SI HAY CAMBIOS PENDIENTES
+git status
+
+//AÑADE TODOS LOS ARCHIVOS QUE HAYAN SUFRIDO CAMBIOS EN EL REPOSITORIO
+git add .
+
+//REGRESA ESTADO ACTUAL DEL REPOSITORIO, SI HAY CAMBIOS PENDIENTES
+git status
+
+//REGISTRO DE LO QUE ESTAS CAMBIANDO
+git commit -m "comentario"
+
+//TODOS LOS COMITS HECHOS LOCALMENTE SE SUBEN AL QUE ESTAN EN LINEA
+git push -u origin master
+
+*---------------------------------------------------------------*
+//Comandos nuevos (Branch)
+
+// Permite crear una nueva rama fuera del master remoto
+git branch nombre_nueva_rama
+
+// Permite moverte entre el master y las ramas creadas
+git checkout nombre_del_branch
+
+// Permite actualizar la rama en la que te encuentres (nombre de la rama debe 
+// coincidir con tu ubicacion de git)
+git pull origin nombre_branch
+
+// permite actualizar tu branch con el master remoto si este ha sido modificado.
+// (Cuando dos o mas usuarios trabajan en el proyecto al mismo tiempo)
+git rebase master
+
+// 
+

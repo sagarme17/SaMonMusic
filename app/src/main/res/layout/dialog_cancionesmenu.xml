@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/music_file_album_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorSecondary"
+            android:textSize="1sp" />
+
+        <TextView
+            android:id="@+id/music_file_foto_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="@color/colorSecondary"
+            android:textSize="1sp" />
+
+        <ImageView
+            android:id="@+id/music_img_op"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorSecondary"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/music_file_name_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/music_img_op"
+            android:maxLines="1"
+            android:paddingTop="8dp"
+            android:text="Nombre Cancion"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/music_file_artist_op"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@+id/music_img_op"
+            android:paddingTop="15dp"
+            android:text="Nombre Artista"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="-1dp"
+            android:background="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="196dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/Layout_lista"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add_playlist"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/playlist_song" />
+
+            <TextView
+                android:id="@+id/add_playlist_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:text="Agregar a lista de reproducción"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout_fav"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/like" />
+
+            <TextView
+                android:id="@+id/add_fav_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="1"
+                android:text="Agregar a favoritos"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout_album"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botonalbum"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="7sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/album" />
+
+            <TextView
+                android:id="@+id/view_album_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="8sp"
+                android:layout_weight="1"
+                android:text="Ver álbum"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Layout_artista"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botonartista"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/artist" />
+
+            <TextView
+                android:id="@+id/view_artist_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="7sp"
+                android:layout_weight="1"
+                android:text="Ver artista"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

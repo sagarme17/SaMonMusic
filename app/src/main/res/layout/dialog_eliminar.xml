@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="155dp"
+    android:background="@color/colorSecondary">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/warning" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="237dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:text="¿Esta seguro que desea eliminar la lista de reproducción?"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/elimina_acepta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:text="Aceptar"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/eliminaCancela"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/eliminaCancela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:text="Cancelar"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
