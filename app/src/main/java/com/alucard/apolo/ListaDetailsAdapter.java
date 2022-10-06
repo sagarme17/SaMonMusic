@@ -146,33 +146,9 @@ public class ListaDetailsAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
             myDialog.show();
 
-            Button album = (Button) myDialog.findViewById(R.id.botonalbum);
-            album.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    myDialog.hide();
-                    String name = album_name.getText().toString();
-                    Intent intento = new Intent(context, AlbumDetails.class);
-                    intento.putExtra("albumName", name);
-                    intento.putExtra("tipo", 2);
-                    context.startActivity(intento);
-                    //((BibliotecaActivity)mContext).getViewPager().setCurrentItem(2);
 
-                }
-            });
 
-            Button artista = (Button) myDialog.findViewById(R.id.botonartista);
-            artista.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    myDialog.hide();
-                    String artista = artist_name.getText().toString();
-                    Intent intento = new Intent(context, AlbumDetails.class);
-                    intento.putExtra("albumName", artista);
-                    intento.putExtra("tipo", 3);
-                    context.startActivity(intento);
-                }
-            });
+
 
             Button agregarlista = (Button) myDialog.findViewById(R.id.add_playlist);
             agregarlista.setOnClickListener(new View.OnClickListener() {

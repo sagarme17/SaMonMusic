@@ -149,29 +149,9 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyViewHolder
             }
             myDialog.show();
 
-            Button album = (Button) myDialog.findViewById(R.id.botonalbum);
-            album.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    myDialog.hide();
-                    Intent intento = new Intent(mContext, AlbumDetails.class);
-                    intento.putExtra("albumName", name);
-                    intento.putExtra("tipo", 2);
-                    mContext.startActivity(intento);
-                }
-            });
 
-            Button artista = (Button)myDialog.findViewById(R.id.botonartista);
-            artista.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    myDialog.hide();
-                    Intent intento = new Intent(mContext, AlbumDetails.class);
-                    intento.putExtra("albumName", artist);
-                    intento.putExtra("tipo", 3);
-                    mContext.startActivity(intento);
-                }
-            });
+
+
 
             Button agregarlista = (Button)myDialog.findViewById(R.id.add_playlist);
             agregarlista.setOnClickListener(new View.OnClickListener() {
