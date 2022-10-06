@@ -44,7 +44,7 @@ public class BibliotecaActivity extends AppCompatActivity {
     ViewPager viewPager;
     TabItem canciones, listas, albumes, artistas;
     ViewPagerAdapter pagerAdapter;
-    private List<Integer> fragmentsIcons = new ArrayList<>(Arrays.asList(R.drawable.canciones, R.drawable.listas, R.drawable.album, R.drawable.artist));
+    private List<Integer> fragmentsIcons = new ArrayList<>(Arrays.asList(R.drawable.canciones, R.drawable.listas));
     public static int REQUEST_CODE = 1;
     static ArrayList<MusicFiles> musicFiles;
     static int tipoVista = 0;
@@ -75,30 +75,14 @@ public class BibliotecaActivity extends AppCompatActivity {
                     case 0:
                         tabLayout.getTabAt(0).setIcon(R.drawable.cancionesselect);
                         tabLayout.getTabAt(1).setIcon(R.drawable.listas);
-                        tabLayout.getTabAt(2).setIcon(R.drawable.album);
-                        tabLayout.getTabAt(3).setIcon(R.drawable.artist);
+
                         tipoVista = 0;
                         break;
                     case 1:
                         tabLayout.getTabAt(0).setIcon(R.drawable.canciones);
                         tabLayout.getTabAt(1).setIcon(R.drawable.listasselect);
-                        tabLayout.getTabAt(2).setIcon(R.drawable.album);
-                        tabLayout.getTabAt(3).setIcon(R.drawable.artist);
+
                         tipoVista = 1;
-                        break;
-                    case 2:
-                        tabLayout.getTabAt(0).setIcon(R.drawable.canciones);
-                        tabLayout.getTabAt(1).setIcon(R.drawable.listas);
-                        tabLayout.getTabAt(2).setIcon(R.drawable.albumselect);
-                        tabLayout.getTabAt(3).setIcon(R.drawable.artist);
-                        tipoVista = 2;
-                        break;
-                    case 3:
-                        tabLayout.getTabAt(0).setIcon(R.drawable.canciones);
-                        tabLayout.getTabAt(1).setIcon(R.drawable.listas);
-                        tabLayout.getTabAt(2).setIcon(R.drawable.album);
-                        tabLayout.getTabAt(3).setIcon(R.drawable.artistselect);
-                        tipoVista = 3;
                         break;
                 }
             }
@@ -171,8 +155,7 @@ public class BibliotecaActivity extends AppCompatActivity {
     private void setUpViewPagerAdapter(){
         pagerAdapter.addFragment(new CancionesFragment(), "Canciones");
         pagerAdapter.addFragment(new ListasFragment(), "Listas");
-        pagerAdapter.addFragment(new AlbumesFragment(), "Albumes");
-        pagerAdapter.addFragment(new ArtistasFragment(), "Artistas");
+
         viewPager.setAdapter(pagerAdapter);
 
         tabLayout.setupWithViewPager(viewPager);
