@@ -18,6 +18,24 @@
         android:layout_marginBottom="15dp"
         android:id="@+id/imgReproduccion"
         />
+    <Button
+        android:id="@+id/btn_favorite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/like" />
+    <Button
+        android:id="@+id/btn_add_playlist"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/playlist_song" />
 
     <TextView
         android:id="@+id/nameCancionReprod"
@@ -44,5 +62,6 @@
         android:textSize="12sp"
         android:layout_marginBottom="15dp"
         />
+
 
 </RelativeLayout>
