@@ -641,7 +641,7 @@ public class MusicPlayActivity extends AppCompatActivity implements MediaPlayer.
         }else{
             Glide.with(getApplicationContext()).asBitmap().load(R.drawable.no_cover).into(cover);
             RelativeLayout gradient = findViewById(R.id.mContainer);
-            gradient.setBackgroundResource(R.color.colorSecondary);
+            gradient.setBackgroundResource(R.drawable.gradient_bg);
         }
         retriever.release();
     }
