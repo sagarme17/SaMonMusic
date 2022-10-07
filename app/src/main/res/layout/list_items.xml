@@ -5,7 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="1dp"
-    android:background="@color/colorSecondary"
+    android:background="@color/colorBG"
     android:orientation="vertical">
 
     <ImageButton

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="1dp"
-    android:background="@color/colorSecondary"
+    android:background="@color/colorBG"
     android:id="@+id/audio_item">
 
     <ImageView
@@ -12,7 +12,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="@color/colorSecondary"
-        android:padding="5dp"/>
+        android:padding="5dp" />
 
     <TextView
         android:id="@+id/music_file_name"

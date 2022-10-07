@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorBG">
 
 
     <TextView
@@ -23,10 +23,10 @@
         android:ellipsize="end"/>
 
     <RelativeLayout
+        android:id="@+id/imagenCard"
         android:layout_width="match_parent"
         android:layout_height="330dp"
-        android:layout_below="@+id/nombreLista"
-        android:id="@+id/imagenCard">
+        android:layout_below="@+id/nombreLista">
 
         <ImageView
             android:id="@+id/listaPhoto"
@@ -34,9 +34,9 @@
             android:layout_height="270dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:scaleType="centerCrop"
             android:background="#2B2B2B"
-            android:src="@drawable/no_cover"  />
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_cover" />
 
         <ImageView
             android:id="@+id/listaPhotopt1"
@@ -83,5 +83,5 @@
         android:id="@+id/listaElements"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/imagenCard"/>
+        android:layout_below="@+id/imagenCard" />
 </RelativeLayout>

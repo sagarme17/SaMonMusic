@@ -50,19 +50,18 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:id="@+id/card"
         android:layout_below="@id/layout_top_btn">
 
         <ImageView
             android:id="@+id/coverArt"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
             android:background="#2B2B2B"
+            android:scaleType="centerCrop"
             android:src="@drawable/no_cover" />
 
     </RelativeLayout>
@@ -71,33 +70,33 @@
         android:id="@+id/titleSong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/card"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
         android:text="Titulo de la Cancion"
         android:textAllCaps="false"
-        android:textColor="@color/colorAccent"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/card"
+        android:textColor="@color/colorWhite"
         android:textSize="22sp"
-        android:textStyle="bold"
-        android:singleLine="true"
-        android:ellipsize="end"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/nameArtist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/titleSong"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
         android:text="Nombre del artista"
         android:textAllCaps="false"
-        android:textColor="@color/colorAccent"
-        android:gravity="center_horizontal"
-        android:layout_below="@id/titleSong"
+        android:textColor="@color/colorWhite"
         android:textSize="18sp"
-        android:textStyle="italic"
-        android:singleLine="true"
-        android:ellipsize="end"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"/>
+        android:textStyle="italic" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -110,11 +109,11 @@
             android:id="@+id/seekBarTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent"
-            android:progressTint="@color/colorAccent"
-            android:thumbTint="@color/colorAccent"
             android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"/>
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="@color/colorWhite"
+            android:progressTint="@color/colorWhite"
+            android:thumbTint="@color/colorAccent" />
 
         <RelativeLayout
             android:layout_width="match_parent"

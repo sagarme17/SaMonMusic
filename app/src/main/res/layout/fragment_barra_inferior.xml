@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="150dp"
     android:id="@+id/barraInferior"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorBG"
     android:gravity="center_vertical"
     tools:context=".BarraInferior">
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:src="@mipmap/ic_launcher"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -27,13 +27,14 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/like" />
+
     <Button
         android:id="@+id/btn_add_playlist"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="340dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/playlist_song" />
 
@@ -41,27 +42,26 @@
         android:id="@+id/nameCancionReprod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_toEndOf="@+id/imgReproduccion"
-        android:layout_marginTop="5dp"
+        android:singleLine="true"
         android:text="Nombre de la Cancion"
         android:textColor="@color/colorWhite"
-        android:singleLine="true"
-        android:textStyle="bold"
-        android:textSize="18sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/nameArtistaReprod"
-        android:layout_below="@+id/nameCancionReprod"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/nameCancionReprod"
+        android:layout_marginBottom="15dp"
         android:layout_toEndOf="@+id/imgReproduccion"
+        android:singleLine="true"
         android:text="Nombre de la Cancion"
         android:textColor="@color/colorWhite"
-        android:singleLine="true"
-        android:textStyle="italic"
-        android:textSize="12sp"
-        android:layout_marginBottom="15dp"
-        />
+        android:textSize="14sp"
+        android:textStyle="italic" />
 
 
 </RelativeLayout>

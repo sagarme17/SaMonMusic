@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/drawable/gradient_bg.xml" value="0.143" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/drawable/ic_launcher_background.xml" value="0.143" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/activity_album_details.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/activity_biblioteca.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/activity_player.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/album_item.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/dialog_cancionesmenu.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/dialog_eliminar.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/dialog_listasmenu.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/dialog_nombre_lista.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/dialog_nuevonombre.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/fragment_albumes.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/fragment_artistas.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/fragment_barra_inferior.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/fragment_canciones.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/fragment_dialog_listas.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/fragment_listas.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/list_items.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/lista_details.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/monse/AndroidStudioProjects/ProyectoReproductorMusica/FINAL/SaMonMusic/app/src/main/res/layout/music_items.xml" value="0.21784420289855072" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
