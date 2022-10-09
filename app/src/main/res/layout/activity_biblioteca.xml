@@ -14,6 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
+        android:layout_marginTop="740dp"
+
         app:tabIndicatorFullWidth="true"
         app:tabTextColor="#FFFFFF"
         app:tabSelectedTextColor="@color/colorAccent"
@@ -26,16 +28,18 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="00dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        >
     </androidx.viewpager.widget.ViewPager>
 
     <RelativeLayout
         android:id="@+id/barraReproduccion"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="720dp"/>
+        android:layout_marginTop="645dp"/>
 
 
 </RelativeLayout>

@@ -629,12 +629,12 @@ public class MusicPlayActivity extends AppCompatActivity implements MediaPlayer.
                         RelativeLayout gradient = findViewById(R.id.mContainer);
                         GradientDrawable gradientDrawable = new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,
                                 new int[]{swatch.getRgb(), swatch.getRgb()});
-                        gradient.setBackground(gradientDrawable);
+                        gradient.setBackgroundResource(R.drawable.gradient_bg);
                     }else{
                         RelativeLayout gradient = findViewById(R.id.mContainer);
                         GradientDrawable gradientDrawable = new GradientDrawable(GradientDrawable.Orientation.BOTTOM_TOP,
                                 new int[]{0xff000000, 0xff000000});
-                        gradient.setBackground(gradientDrawable);
+                        gradient.setBackgroundResource(R.drawable.gradient_bg);
                     }
                 }
             });
