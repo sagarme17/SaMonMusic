@@ -4,12 +4,13 @@
     android:id="@+id/menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBG"
+    android:background="@color/colorAccent"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp">
 
         <TextView
             android:id="@+id/music_file_album_op"
@@ -60,7 +61,7 @@
             android:text="Nombre Artista"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
-            android:textStyle="italic" />
+            android:textStyle="normal" />
 
         <View
             android:id="@+id/divider"

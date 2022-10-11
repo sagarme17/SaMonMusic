@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
-    android:background="@color/colorBG">
+    android:background="@color/colorAccent">
 
     <View
         android:id="@+id/divider5"
@@ -52,12 +52,12 @@
         android:id="@+id/aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:layout_weight="1"
         android:background="#00FFFFFF"
         android:text="Aceptar"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
         app:layout_constraintStart_toEndOf="@+id/cancelar"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
@@ -65,12 +65,12 @@
         android:id="@+id/cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
         android:layout_weight="1"
         android:background="#00FFFFFF"
         android:text="Cancelar"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
         app:layout_constraintStart_toEndOf="@+id/divider5"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
